@@ -70,5 +70,7 @@ class Main {
                                     5, citation_thesmophories,
                                     100, citation_guêpes,
                                     0, "");
+
+    assert aristophane.getCitationTragedie()== citation_thesmophories;
   }
 }
