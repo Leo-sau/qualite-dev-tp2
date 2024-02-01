@@ -29,6 +29,21 @@ public class Auteur{
         return this.citationTragedie;
     }
 
+    public int getQualiteComedie(){
+        return this.qualiteComedie;
+    }
+
+    public String getCitationComedie(){
+        return this.citationComedie;
+    }
+
+    public int getQualiteDrame(){
+        return this.qualiteDrame;
+    }
+
+    public String getCitationDrame(){
+        return this.citationDrame;
+    }
     @Override
     public String toString() {
         String s1 = "L'honorable ";
