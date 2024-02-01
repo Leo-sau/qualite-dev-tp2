@@ -68,6 +68,17 @@ public class Auteur{
             return this.qualiteDrame;
         }
     }
+    public String citationStyle(Style s) {
+        if(s== Style.COMÉDIE) {
+            return this.citationComedie;
+        }
+        else if (s== Style.TRAGÉDIE) {
+            return this.citationTragedie;
+        }
+        else {
+            return this.citationDrame;
+        }
+    }
     @Override
     public String toString() {
         String s1 = "L'honorable ";

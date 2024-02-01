@@ -74,5 +74,6 @@ class Main {
     assert aristophane.getCitationTragedie()== citation_thesmophories;
     assert aristophane.pointFort()=="Comédie";
     assert aristophane.qualiteStyle(Style.COMÉDIE) ==100;
+    assert aristophane.citationStyle(Style.COMÉDIE) ==citation_guêpes;
   }
 }
