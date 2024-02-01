@@ -44,6 +44,18 @@ public class Auteur{
     public String getCitationDrame(){
         return this.citationDrame;
     }
+
+    public String pointFort() {
+        if (this.qualiteComedie>this.qualiteDrame && this.qualiteComedie>this.qualiteTragedie) {
+            return Style.COMÉDIE.toString();
+        }
+        else if (this.qualiteTragedie>this.qualiteDrame && this.qualiteComedie<this.qualiteTragedie) {
+            return Style.TRAGÉDIE.toString();
+        }
+        else {
+            return Style.DRAME.toString();
+        }
+    }
     @Override
     public String toString() {
         String s1 = "L'honorable ";

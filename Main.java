@@ -70,7 +70,8 @@ class Main {
                                     5, citation_thesmophories,
                                     100, citation_guêpes,
                                     0, "");
-
+    System.out.println(aristophane.toString());
     assert aristophane.getCitationTragedie()== citation_thesmophories;
+    assert aristophane.pointFort()=="Comédie";
   }
 }
