@@ -73,5 +73,6 @@ class Main {
     System.out.println(aristophane.toString());
     assert aristophane.getCitationTragedie()== citation_thesmophories;
     assert aristophane.pointFort()=="Comédie";
+    assert aristophane.qualiteStyle(Style.COMÉDIE) ==100;
   }
 }

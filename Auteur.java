@@ -56,6 +56,18 @@ public class Auteur{
             return Style.DRAME.toString();
         }
     }
+
+    public int qualiteStyle(Style s) {
+        if(s== Style.COMÉDIE) {
+            return this.qualiteComedie;
+        }
+        else if (s== Style.TRAGÉDIE) {
+            return this.qualiteTragedie;
+        }
+        else {
+            return this.qualiteDrame;
+        }
+    }
     @Override
     public String toString() {
         String s1 = "L'honorable ";
