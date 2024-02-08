@@ -35,4 +35,12 @@ public class Journee{
         return auteur.qualiteStyle(this.style.get(periode.toString()))*this.getNbSpec(periode);
     }
 
+    public Auteur vainqueur(Auteur auteur1 , Auteur auteur2) {
+        if (scoreJournee(auteur1)>scoreJournee(auteur2)) {
+            return auteur1;
+        }
+        else {
+            return auteur2;
+        }
+    }
 }

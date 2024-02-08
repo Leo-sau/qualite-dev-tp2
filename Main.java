@@ -75,5 +75,24 @@ class Main {
     assert aristophane.pointFort()=="Comédie";
     assert aristophane.qualiteStyle(Style.COMÉDIE) ==100;
     assert aristophane.citationStyle(Style.COMÉDIE) ==citation_guêpes;
+  
+    Journee journee = new Journee(Style.DRAME, 15, Style.COMÉDIE, 20, Style.TRAGÉDIE, 26);
+    System.out.println("Aristophane");
+    System.out.println(journee.scoreAuteur(aristophane, Periode.MATIN));
+    System.out.println(journee.scoreAuteur(aristophane, Periode.APRESMIDI));
+    System.out.println(journee.scoreAuteur(aristophane, Periode.SOIREE));
+
+    System.out.println("Euripide");
+    System.out.println(journee.scoreAuteur(euripide, Periode.MATIN));
+    System.out.println(journee.scoreAuteur(euripide, Periode.APRESMIDI));
+    System.out.println(journee.scoreAuteur(euripide, Periode.SOIREE));
+
+    System.out.println("Aristophane");
+    System.out.println(journee.scoreJournee(aristophane));
+    System.out.println("Euripide");
+    System.out.println(journee.scoreJournee(euripide));
+    System.out.println(journee.vainqueur(euripide, aristophane).toString());
+
+
   }
 }
