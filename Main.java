@@ -103,6 +103,8 @@ class Main {
     tournoi.inscrire(sophocle);
     System.out.println(tournoi.getNom());
     tournoi.afficheParticipants();
-    
+    tournoi.débute();
+    System.out.println(tournoi.estCommencé());
+    System.out.println(tournoi.estTerminé());
   }
 }
