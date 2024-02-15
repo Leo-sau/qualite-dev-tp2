@@ -97,14 +97,20 @@ class Main {
 
     //Tournoi:
 
-    Tournoi tournoi = new Tournoi("Le Tournoi");
+    Tournoi tournoi = new Tournoi("Le Tournoi");    
     tournoi.inscrire(euripide);
     tournoi.inscrire(aristophane);
     tournoi.inscrire(sophocle);
     System.out.println(tournoi.getNom());
     tournoi.afficheParticipants();
     tournoi.débute();
-    System.out.println(tournoi.estCommencé());
+    System.out.println(tournoi.participantAProchaineJournée());
+    System.out.println(tournoi.participantBProchaineJournée());
+    tournoi.enregistreRésultatJournée(true);
+    System.out.println(tournoi.participantAProchaineJournée());
+    System.out.println(tournoi.participantBProchaineJournée());
+    tournoi.enregistreRésultatJournée(true);
+    System.out.println(tournoi.vainqueur());
     System.out.println(tournoi.estTerminé());
   }
 }
